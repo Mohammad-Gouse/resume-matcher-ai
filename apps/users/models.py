@@ -20,9 +20,5 @@ class User(AbstractUser):
         default="candidate",
     )
 
-    # Use email instead of username
-    USERNAME_FIELD = "email"
-    REQUIRED_FIELDS = ["username"]
-
     def __str__(self):
         return self.email
